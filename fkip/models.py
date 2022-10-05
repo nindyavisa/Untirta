@@ -38,7 +38,7 @@ class Mahasiswa(models.Model):
     def _str_(self):
         return self.NIM
 
-class fisip(models.Model):
+class fkip(models.Model):
     Judul = models.CharField(max_length=50)
     Dosen_id = models.ForeignKey(Dosen, on_delete=models.CASCADE, null=True)
     Tendik_id = models.ForeignKey(Tendik, on_delete=models.CASCADE, null=True)
